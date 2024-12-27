@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito de Compras</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Carrito de Compras</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Volver a la tienda</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="carrito-contenido">
+    <h2>Tu Carrito</h2>
+    <div id="productos-carrito"></div>
+    <div id="total-carrito"></div>
+    <button onclick="vaciarCarrito()">Vaciar Carrito</button>
+  </section>
+
+  <section id="metodos-pago">
+    <h3>Métodos de Pago</h3>
+
+    <!-- Opción de pago por Transferencia Bancaria -->
+    <div>
+      <h4>Pago por Transferencia Bancaria</h4>
+      <p>Realiza una transferencia a la siguiente cuenta:</p>
+      <p><strong>Banco XYZ</strong></p>
+      <p>IBAN: XXXXXXXXXXXX</p>
+      <p>SWIFT: XXXXXXXXX</p>
+      <p>Una vez realizada la transferencia, por favor envíanos un correo a contacto@tienda.com</p>
+    </div>
+
+    <!-- Opción de pago con Criptomonedas -->
+    <div>
+      <h4>Pago con Criptomonedas</h4>
+
+      <h5>Bitcoin (BTC)</h5>
+      <p>Dirección para pagar en Bitcoin:</p>
+      <p><strong>1A1zP1eP5QGefi2DMPTfTL5SLmv7DivfNa</strong></p>
+      <p>Escanea el código QR para pagar:</p>
+      <img src="images/qr-btc.png" alt="Dirección Bitcoin QR" width="200">
+
+      <h5>Ethereum (ETH)</h5>
+      <p>Dirección para pagar en Ethereum:</p>
+      <p><strong>0x7f1f8b5984e8754e143208e5a57ffde8c6bcd13f</strong></p>
+      <p>Escanea el código QR para pagar:</p>
+      <img src="images/qr-eth.png" alt="Dirección Ethereum QR" width="200">
+
+      <h5>Nano (XNO)</h5>
+      <p>Dirección para pagar en Nano:</p>
+      <p><strong>xrb_1ql4qxk5zns7fd5h8o1d8da33yoyyqdto8h6zdfqtpwxy8j1ngy6gjawf4i7</strong></p>
+      <p>Escanea el código QR para pagar:</p>
+      <img src="images/qr-xno.png" alt="Dirección Nano QR" width="200">
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2024 Tienda Online</p>
+  </footer>
+
+  <script src="js/cart.js"></script>
+</body>
+</html>
